@@ -1,0 +1,18 @@
+
+class Vector 
+  def initialize(*args)
+    @i = args[0]
+    @j = args[1]
+    @k = args[2]
+  end
+
+  def +(vector) 
+    new_vector = [(@i + vector[0]), (@j+ vector[1]), (@k + vector[2])]
+    new_vector
+  end
+end
+
+a = Vector.new(1,3,4)
+b = Vector.new(3,4,5)
+
+puts a + b
